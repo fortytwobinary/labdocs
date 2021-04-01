@@ -9,7 +9,7 @@ AsciiDoc.py Team
 :stylesheet: italian-pop.css
 :website: https://asciidoc.org/
 
-http://control-1.fortytwobinary.lab/[home]
+{endpoint-url}/welcome.html[home]
 
 AsciiDoc is a text document format for writing notes, documentation,
 articles, books, ebooks, slideshows, web pages, blogs and UNIX man

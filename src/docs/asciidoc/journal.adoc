@@ -10,7 +10,7 @@ FortyTwoBinary Team
 :website: https://fortytwobinary.com/
 :author: David L. Whitehurst
 
-http://control-1.fortytwobinary.lab/[home]
+{endpoint-url}/welcome.html[home]
 
 image:vy.png["Company Logo",height=32]
 

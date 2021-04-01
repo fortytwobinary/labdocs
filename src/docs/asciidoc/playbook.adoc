@@ -9,7 +9,7 @@ FortyTwoBinary Team
 :stylesheet: italian-pop.css
 :website: https://fortytwobinary.com/
 
-http://control-1.fortytwobinary.lab/[home]
+{endpoint-url}/welcome.html[home]
 
 image:vy.png["Company Logo",height=32]
 

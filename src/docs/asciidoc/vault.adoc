@@ -12,7 +12,7 @@ FortyTwoBinary Team
 :author: David L. Whitehurst
 :machine-os: Raspberry Pi 4 Model B
 
-http://control-1.fortytwobinary.lab/[home]
+{endpoint-url}/welcome.html[home]
 
 image:vy.png["Company Logo",height=32]
 
