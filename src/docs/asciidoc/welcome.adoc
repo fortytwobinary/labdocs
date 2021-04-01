@@ -8,14 +8,15 @@ FortyTwoBinary Team
 :docinfo: shared
 :numbered:
 :website: https://fortytwobinary.com/
+:endpoint-url: https://apache.fortytwobinary.com/labdocs/target/generated-docs
 :author: David L. Whitehurst
 
-http://apache.fortytwobinary.com/documentation[home]
+{endpoint-url}/welcome.html[home]
 
 image:vy.png["Company Logo",height=32]
 
-Welcome to the FortyTwoBinary lab documentation. This document is subject
-to great change and will be maintained in a software repository https://github.com/fortytwobinary[here].
+Welcome to the FortyTwoBinary lab documentation. These documents are subject
+to great change and will be maintained in a software repository https://github.com/fortytwobinary/labdocs[here].
 
 [WARNING]
 This {description} was drafted and is maintained as a DevOps reference to the work that occurs on the FortyTwoBinary network and infrastructure. The powerful command-line instructions found here, may or may
@@ -35,4 +36,27 @@ and troubleshooting.
 
 Introduction
 ------------
-Text goes here ...
+I am a software professional and with the popularity of Kubernetes, I now write software
+that runs on a Kubernetes platform. Most developers tinker with new technology at home, at
+night. And, employers can't afford to train their staff or allow consultants to just learn
+on the job. For my situation, Kubernetes is expensive to host in the cloud for personal
+and training reasons. I've recently arrived at a better solution and that's my own K8s
+cluster using recently available Model 4b Raspberry Pi machines.
+
+My cluster consists of 3 model 4b and 2 model 3b Raspberry Pi SBCs.
+
+Environment
+-----------
+The FortyTwoBinary lab environment is simply a home network, 8 small board computers (arm64),
+an 8-port switch, a 5-port switch, a wireless router, and a public ISP. I currently host a
+few services publicly and all communications are protected with PKI certificates.
+
+Links
+-----
+
+The following hyperlinks provide navigation to the lab documentation content. Links are given
+here because the documents are not organized and it's more convenient to just list them here.
+
+- {endpoint-url}/kube-tower.html[kube-tower]
+- {endpoint-url}/playbook.html[playbook]
+- {endpoint-url}/docker.html[playbook]
