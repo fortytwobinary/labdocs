@@ -17,7 +17,7 @@ image:vy.png["Company Logo",height=32]
 Welcome to the FortyTwoBinary service journal of infrastructure changes
 on multiple platforms across our home network. This document is subject
 to great change and will be maintained in a software repository
-http://192.168.1.7/infrastructure/documentation[here].
+https://github.com/fortytwobinary/labdocs[here].
 
 .This document
 **********************************************************************

@@ -15,7 +15,7 @@ image:vy.png["Company Logo",height=32]
 
 Welcome to the FortyTwoBinary Network and Infrastructure Playbook. This
 document is subject to great change and will be maintained in a software
-repository http://192.168.1.7/infrastructure/documentation[here].
+repository https://github.com/fortytwobinary/labdocs[here].
 
 [WARNING]
 This playbook was drafted and is maintained as a DevOps reference to the

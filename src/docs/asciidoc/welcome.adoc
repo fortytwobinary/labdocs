@@ -45,11 +45,11 @@ on the job. For my situation, Kubernetes is expensive to host in the cloud for p
 and training reasons. I've recently arrived at a better solution and that's my own K8s
 cluster using recently available Model 4b Raspberry Pi machines.
 
-My cluster consists of 3 model 4b and 2 model 3b Raspberry Pi SBCs.
+My cluster consists of 3 model 4b and 2 model 3b Raspberry Pi small board computers (SBC).
 
 Environment
 -----------
-The FortyTwoBinary lab environment is simply a home network, 8 small board computers (arm64),
+The FortyTwoBinary lab environment is simply a home network, 8 SBCs (arm64),
 an 8-port switch, a 5-port switch, a wireless router, and a public ISP. I currently host a
 few services publicly and all communications are protected with PKI certificates.
 
