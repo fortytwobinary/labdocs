@@ -10,6 +10,8 @@ FortyTwoBinary Team
 :website: https://fortytwobinary.com/
 :author: David L. Whitehurst
 
+image:docker.jpg["Docker"]
+
 {endpoint-url}/welcome.html[home]
 
 image:vy.png["Company Logo",height=32]
