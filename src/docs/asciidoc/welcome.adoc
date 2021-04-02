@@ -62,6 +62,7 @@ here because the documents are not organized and it's more convenient to just li
 - {endpoint-url}/kube-tower.html[kube-tower]
 - {endpoint-url}/playbook.html[playbook]
 - {endpoint-url}/docker.html[docker]
+- {endpoint-url}/nfs.html[nfs]
 - {endpoint-url}/vault.html[vault]
 - {endpoint-url}/journal.html[journal]
 - {endpoint-url}/asciidoc.html[asciidoc]
