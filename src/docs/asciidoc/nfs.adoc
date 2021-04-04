@@ -68,84 +68,64 @@ Dependencies
 
 NFS Server Installation
 -----------------------
-Text here ...
+The server installation is done with the apt utility as sudo. On the master node and the node with the physical mount, install the NFS server package(s).
+[source,bash]
+----
+$ sudo apt-get update
+$ sudo apt-get install -y nfs-kernel-server
+----
+NFS uses a file in `/etc` called `exports` to let everyone know about the new physical mount. Add this to the file `/etc/exports`
+[source,bash]
+----
+/mnt/ext *(rw,no_root_squash,insecure,async,no_subtree_check,anonuid=1000,anongid=1000)
+----
+Now, let all of our system NFS clients know about the new mount.
 
-TIP: Download the Vault binary for Raspberry Pi 4 Model B here: https://releases.hashicorp.com/vault/1.6.2/vault_1.6.2_linux_arm.zip[https://releases.hashicorp.com/vault/1.6.2/vault_1.6.2_linux_arm.zip]
+[source,bash]
+----
+$ sudo exportfs -ra
+----
+We're done here. Now let's move on to the NFS clients.
 
 NFS Client Installation
 -----------------------
-Text here ...
 
-TIP: Download the Vault binary for Raspberry Pi 4 Model B here: https://releases.hashicorp.com/vault/1.6.2/vault_1.6.2_linux_arm.zip[https://releases.hashicorp.com/vault/1.6.2/vault_1.6.2_linux_arm.zip]
+TIP: Remember that the client installation here needs to be done on all nodes. I'm only describing the process once.
 
-[WARNING]
-Do NOT download the ARM64 edition for Linux. It will NOT run on the Raspberry Pi 4 Model B using Raspbian (Debian 10 Buster) as of February 27, 2021. This message is HIGHLY subject to CHANGE.
-
-Unzip the download somewhere and we moved the file `vault` to `<user-home>/bin` Then we added the following to our `.bashrc` and sourced it instead of logging out and back in.
-
+The client installation is also done with the apt utility as sudo. Let's install the client package(s).
 [source,bash]
 ----
-export PATH=/home/pi/bin:$PATH
+$ sudo apt-get update
+$ sudo apt-get install -y nfs-common
 ----
-Now our user (pi) can execute the vault program from anywhere. The only
-caveat is that with the command, a configuration is needed. Let's create
-the configuration for Vault in the user's home directory. We'll then run
-the executable and discuss optimum configuration in the <<X5>>
-section below.
-
-Configuration
-~~~~~~~~~~~~~
-Hashicorp Vault can be configured using JSON or <<X900>>. We chose to use
-JSON only for familiarity. Create a file called `vault-config.json` in the
-user's home directory and add this content:
-
-[source,json]
-----
-{
-  "backend": {
-    "file": {
-      "path": "vault/data"
-    }
-  },
-  "listener": {
-    "tcp":{
-      "address": "0.0.0.0:8200",
-      "tls_disable": 1
-    }
-  },
-  "ui": true
-}
-----
-Take note that the path `vault/data` will be relative to where the vault
-executable is run. We will issue the command from the user's home directory
-and where this configuration file currently resides. Also the `0.0.0.0` in
-the listener section is a placeholder that defines a non-routable IP address. It has been explained to mean "all addresses". Learn more here:
-https://en.wikipedia.org/wiki/0.0.0.0[https://en.wikipedia.org/wiki/0.0.0.0]. The 8200 port is the Hashicorp Vault default.
-
-[WARNING]
-Please note that HTTPS is not being used. This is NOT good practice however, final software configuration may occur within the FortyTwoBinary
-network (internal) or in the event all configuration is moved onto the
-public Internet.
-
-Startup
-~~~~~~~
-N/A
-
-Administration
---------------
-The full administration and use of Docker is yet to be discovered. For now
-we'll provide some cheatsheet commands and a few use cases.
-
-Common Commands
-~~~~~~~~~~~~~~~
-Later ... you are welcome lol ...
-
+Now, create a file system mount with the same path as kube-master (master node).
 [source,bash]
 ----
-$ docker ps
+$ sudo mkdir /mnt/ext
+$ sudo chown -R ubuntu:ubuntu /mnt/ext/
 ----
+Ask ourselves, "what do we know at this point?" We have installed the NFS client software. We created a
+mapped file system path back to the master node's physical mount. And, we've set ownership for the file system
+so that our user `ubuntu` can use it when it's working.
 
-:numbered!:
+Now, we're going to add the actual NFS mount to our file system tabulation in `/etc/fstab`. Open `/etc/fstab`
+and add the following.
+[source]
+----
+192.168.1.12:/mnt/ext /mnt/ext nfs rw 0 0
+----
+Reboot the NFS client host, open a terminal and navigate to the mount. You should see this.
+[source]
+----
+ubuntu@kube-worker-1:/mnt/ext$ ls
+lost+found
+----
+If you don't see `lost+found` then the system did not mount the new NFS filesystem. If you do see it, we're done.
+
+[WARNING]
+Do not just assume that a system reboot will mount `/mnt/ext` by the system just "knowing" to somehow call
+`mount /mnt/ext`. Two of my workers would not mount on reboot and I fixed this with adding a new service to
+systemd. I'll not discuss that here but did want to mention this.
 
 Bibliography
 ------------

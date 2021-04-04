@@ -7,13 +7,13 @@ FortyTwoBinary Team
 :stylesheet: italian-pop.css
 :docinfo: shared
 :numbered:
-:website: https://fortytwobinary.com/
+:website: https://site.fortytwobinary.com/
 :endpoint-url: https://apache.fortytwobinary.com/labdocs/target/generated-docs
 :author: David L. Whitehurst
 
 image:ethernet.jpg["Ethernet"]
 
-{endpoint-url}/welcome.html[home]
+{website}[Site Homepage]
 
 image:vy.png["Company Logo",height=32]
 
