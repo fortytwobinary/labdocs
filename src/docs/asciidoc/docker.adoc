@@ -12,7 +12,9 @@ FortyTwoBinary Team
 
 image:docker.jpg["Docker"]
 
-{endpoint-url}/welcome.html[home]
+{website}[Site Homepage]
+
+{endpoint-url}/welcome.html[Lab Homepage]
 
 image:vy.png["Company Logo",height=32]
 

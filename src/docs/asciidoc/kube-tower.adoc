@@ -13,7 +13,9 @@ FortyTwoBinary Team
 :pi3: Raspberry Pi 3 Model B
 :pi4: Raspberry Pi 4 Model B
 
-{endpoint-url}/welcome.html[home]
+{website}[Site Homepage]
+
+{endpoint-url}/welcome.html[Lab Homepage]
 
 image:vy.png["Company Logo",height=32]
 
