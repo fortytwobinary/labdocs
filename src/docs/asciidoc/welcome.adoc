@@ -8,7 +8,6 @@ FortyTwoBinary Team
 :docinfo: shared
 :numbered:
 :website: https://site.fortytwobinary.com/
-:endpoint-url: https://apache.fortytwobinary.com/labdocs/target/generated-docs
 :author: David L. Whitehurst
 
 image:ethernet.jpg["Ethernet"]
