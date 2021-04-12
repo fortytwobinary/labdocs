@@ -10,11 +10,11 @@ FortyTwoBinary Team
 :website: https://site.fortytwobinary.com/
 :author: David L. Whitehurst
 
-image:ethernet.jpg["Ethernet"]
+image:images/ethernet.jpg["Ethernet"]
 
 {website}[Site Homepage]
 
-image:vy.png["Company Logo",height=32]
+image:images/vy.png["Company Logo",height=32]
 
 Welcome to the FortyTwoBinary lab documentation. These documents are subject
 to great change and will be maintained in a software repository https://github.com/fortytwobinary/labdocs[here].
