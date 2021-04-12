@@ -93,23 +93,23 @@ CO2T336TH03Q, OS current version 11.2.1 macOS Big Sur
 
 |T1-1 kube-worker-3
 |Labist Raspberry Pi 4 Kit model B (192.168.1.19) 8GB RAM Ubuntu 20.04 LTS
-on a 16GB microSD card.
+on a 32GB microSD card.
 
 |T1-2 kube-master (control-plane)
 |Labist Raspberry Pi 4 Kit model B (192.168.1.12) 8GB RAM Ubuntu 20.04 LTS
-on a 16GB microSD card.
+on a 32GB microSD card.
 
 |T1-3 kube-worker-4
 |Labist Raspberry Pi 4 Kit model B (192.168.1.14) 8GBRAM Ubuntu 20.04 LTS
-on a 16GB microSD card.
+on a 32GB microSD card.
 
 |T1-4 kube-worker-2
 |Raspberry Pi 3 Model B (192.168.1.17) 1GB RAM Ubuntu 20.04 LTS
-on a 16GB microSD card.
+on a 32GB microSD card.
 
 |T1-5 kube-worker-1
 |Raspberry Pi 3 Model B (192.168.1.18) 1GB RAM Ubuntu 20.04 LTS
-on a 16GB microSD card.
+on a 32GB microSD card.
 
 |T2-1 ns1
 |Octa-core S912 arm64 (192.168.1.20) XGB RAM Armbian
