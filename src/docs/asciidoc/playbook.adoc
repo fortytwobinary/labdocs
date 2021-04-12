@@ -172,7 +172,7 @@ and an 8-port GS-308.
 
 Private Network
 ~~~~~~~~~~~~~~~
-The FortyTwoBinary.lab network is private. This local area network (LAN) begins with a 192.168.1 subnet with 192.168.1.1 being the gateway (through our router) to the public internet (WAN). We (FortyTwoBinary) own the domain fortytwobinary.com and are currently hosting a static web site using LetsEncrypt and GitHub pages at https://github.com/dlwhitehurst/dlwhitehurst.github.io .
+The FortyTwoBinary.lab network is private. This local area network (LAN) begins with a 192.168.1 subnet with 192.168.1.1 being the gateway (through our router) to the public internet (WAN). We (FortyTwoBinary) own the domain fortytwobinary.com and are currently hosting static web sites at https://site.fortytwobinary.com and https://apache.fortytwobinary.com . A wiki is also hosted at https://wikijs.fortytwobinary.com .
 
 A single DNS (Bind9) server hosts forwarding and reverse lookups for the trusted servers configured for use with the fortytwobinary.lab private network.
 
