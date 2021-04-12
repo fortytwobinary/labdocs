@@ -192,10 +192,13 @@ Text
 
 Configuration Management
 ~~~~~~~~~~~~~~~~~~~~~~~~
+Text
 
 Secrets Management
 ~~~~~~~~~~~~~~~~~~
-Text
+Secrets management for the FortyTwoBinary lab will be handled using Hashicorp Vault. This service is currently running on an unidentified (here) server. Backups are being performed (see below) daily with a Jenkins job. Failure in the system would require the restoration of the vault server (binary) and population on the filesystem with a daily backup tar.
+
+Reliability is good because the Vault server is running on a single network server as the only hosted service. The server is dedicated. The unseal keys and root token do not reside on the machine.
 
 Backups
 ~~~~~~~
