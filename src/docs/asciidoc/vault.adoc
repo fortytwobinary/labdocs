@@ -3,6 +3,7 @@ FortyTwoBinary Team
 :description: installation reference
 :toc: left
 :icons: font
+:imagesdir: images/
 :docinfo: shared
 :numbered:
 :source-highlighter: coderay
@@ -15,7 +16,7 @@ FortyTwoBinary Team
 
 {endpoint-url}/welcome.html[Lab Homepage]
 
-image:images/vy.png["Company Logo",height=32]
+image:vy.png["Company Logo",height=32]
 
 Welcome to the FortyTwoBinary service documentation for Hashicorp Vault
 on {machine-os}. This document is subject to great change and will be maintained in a software repository https://github.com/fortytwobinary/labdocs[here].

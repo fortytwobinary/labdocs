@@ -3,6 +3,7 @@ FortyTwoBinary Team
 :description: Infrastructure Change Journal
 :toc: left
 :icons: font
+:imagesdir: images/
 :docinfo: shared
 :numbered:
 :source-highlighter: coderay
@@ -14,7 +15,7 @@ FortyTwoBinary Team
 
 {endpoint-url}/welcome.html[Lab Homepage]
 
-image:images/vy.png["Company Logo",height=32]
+image:vy.png["Company Logo",height=32]
 
 Welcome to the FortyTwoBinary service journal of infrastructure changes
 on multiple platforms across our home network. This document is subject

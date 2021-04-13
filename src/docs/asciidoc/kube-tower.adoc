@@ -102,7 +102,7 @@ Pi by a guy that works for RedHat here in Raleigh NC. He recommended Ubuntu
 Place a new or recently erased microSD card in your workstation (working machine).
 Open BalenaEtcher (was Etcher) and click "Flash from file". Select the Ubuntu image in your folder containing the image downloaded earlier.
 
-image:images/etcher.PNG[]
+image:etcher.PNG[]
 
 Click select target and choose the 16GB storage media, then click Flash. Go get a glass of tea. When the flash is complete, repeat the process for the remaining 4
 microSD cards. When they are complete, install each card in the machines.

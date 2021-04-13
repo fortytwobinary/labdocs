@@ -3,19 +3,20 @@ FortyTwoBinary Team
 :description: installation reference
 :toc: left
 :icons: font
+:imagesdir: images/
 :stylesheet: italian-pop.css
 :docinfo: shared
 :numbered:
 :website: https://fortytwobinary.com/
 :author: David L. Whitehurst
 
-image:images/files.jpg["Files"]
+image:files.jpg["Files"]
 
 {website}[Site Homepage]
 
 {endpoint-url}/welcome.html[Lab Homepage]
 
-image:images/vy.png["Company Logo",height=32]
+image:vy.png["Company Logo",height=32]
 
 Welcome to the FortyTwoBinary service documentation for the Network File System (NFS) on multiple platforms. This document is subject to great change and will
 be maintained in a software repository https://github.com/fortytwobinary/labdocs[here].

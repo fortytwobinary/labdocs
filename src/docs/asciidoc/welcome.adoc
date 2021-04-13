@@ -3,17 +3,18 @@ FortyTwoBinary Team
 :description: Welcome Page
 :toc: left
 :icons: font
+:imagesdir: images/
 :stylesheet: italian-pop.css
 :docinfo: shared
 :numbered:
 :website: https://site.fortytwobinary.com/
 :author: David L. Whitehurst
 
-image:images/ethernet.jpg["Ethernet"]
+image:ethernet.jpg["Ethernet"]
 
 {website}[Site Homepage]
 
-image:images/vy.png["Company Logo",height=32]
+image:vy.png["Company Logo",height=32]
 
 Welcome to the FortyTwoBinary lab documentation. These documents are subject
 to great change and will be maintained in a software repository https://github.com/fortytwobinary/labdocs[here].

@@ -3,19 +3,20 @@ FortyTwoBinary Team
 :description: installation reference
 :toc: left
 :icons: font
+:imagesdir: images/
 :stylesheet: italian-pop.css
 :docinfo: shared
 :numbered:
 :website: https://fortytwobinary.com/
 :author: David L. Whitehurst
 
-image:images/docker.jpg["Docker"]
+image:docker.jpg["Docker"]
 
 {website}[Site Homepage]
 
 {endpoint-url}/welcome.html[Lab Homepage]
 
-image:images/vy.png["Company Logo",height=32]
+image:vy.png["Company Logo",height=32]
 
 Welcome to the FortyTwoBinary service documentation for Docker
 on multiple platforms. This document is subject to great change and will
