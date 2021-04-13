@@ -126,9 +126,9 @@ on a XGB microSD card. This machine hosts Hashicorp Vault
 
 [[X11]]
 === Virtual
-This section describes the virtual machines that participate in the fortytwobinary.lab
+This section describes the virtual machines that participate in the FortyTwoBinary lab
 experiments. These virtual machines perform some service or function in
-the overall schema of getting work done.
+the overall scheme of getting work done.
 
 - None at this time
 

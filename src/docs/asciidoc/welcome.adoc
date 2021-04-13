@@ -1,5 +1,4 @@
-Welcome
-=======
+= Welcome
 FortyTwoBinary Team
 :description: Welcome Page
 :toc: left
@@ -35,8 +34,7 @@ and troubleshooting.
 **********************************************************************
 
 
-Introduction
-------------
+== Introduction
 I am a software professional and with the popularity of Kubernetes, I now write software
 that runs on a Kubernetes platform. Most developers tinker with new technology at home, at
 night. And, employers can't afford to train their staff or allow consultants to just learn
@@ -46,15 +44,12 @@ cluster using recently available Model 4b Raspberry Pi machines.
 
 My cluster consists of 3 model 4b and 2 model 3b Raspberry Pi small board computers (SBC).
 
-Environment
------------
+== Environment
 The FortyTwoBinary lab environment is simply a home network, 8 SBCs (arm64),
 an 8-port switch, a 5-port switch, a wireless router, and a public ISP. I currently host a
 few services publicly and all communications are protected with PKI certificates.
 
-Links
------
-
+== Links
 The following hyperlinks provide navigation to the lab documentation content. Links are given
 here because the documents are not organized and it's more convenient to just list them here.
 

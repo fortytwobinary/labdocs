@@ -1,10 +1,10 @@
-Infrastructure Journal
-======================
+= Infrastructure Journal
 FortyTwoBinary Team
 :description: Infrastructure Change Journal
 :toc: left
 :icons: font
 :docinfo: shared
+:numbered:
 :source-highlighter: coderay
 :stylesheet: italian-pop.css
 :website: https://fortytwobinary.com/
@@ -31,8 +31,7 @@ and troubleshooting.
 **********************************************************************
 
 
-Introduction
-------------
+== Introduction
 This document contains my writings on the build-out of a network fortytwobinary.lab
 and the infrastructure to support a Kubernetes environment using 3 Raspberry
 Pi small board computers (SBC) to start.
@@ -42,8 +41,7 @@ documentation, and reference.
 
 The fortytwobinary.lab network is strictly for experimentation and education.
 
-Mar 2021
---------
+== Mar 2021
 I'll start my journal here with a picture of the devices currently on the
 FortyTwoBinary home (internal) network. Here's a snip from the router admin
 showing the wired and wireless devices currently enabled. I'll dive into more
@@ -73,8 +71,7 @@ The second from the top machine 192.168.1.15 or oily-weasel is currently just
 running. As part of this Kubernetes on Pi initiative, he's just a new Pi 4B
 volunteer that's offered his assistance as a kube-worker.
 
-Mar 13, 2021
-~~~~~~~~~~~~
+=== Mar 13, 2021
 
 Last night I put the tower together, but the newer computers were already hosting
 Bind9, Apache, Vault, and Gitlab. I flashed two new micro SD cards with Raspbian
@@ -82,8 +79,7 @@ Lite for the two older machines on the bottom of my new tower. These older machi
 were named today (see playbook) but hostnames and DNS have not been set up due to
 Kubernetes changes coming.
 
-Mar 14, 2021
-~~~~~~~~~~~~
+=== Mar 14, 2021
 Here are the decisions I've made today. I have two groups of SBCs, 5 raspberry pi
 computers (tower) and 3 KM8Ps (octa-core arm64). I currently host Gitlab and Apache
 on one of the Pi machines. And another Pi Model 4B is idle. These two will NOT host
@@ -96,8 +92,7 @@ will handle all cron activity and maybe even host NFS storage (for backups). The
 Kubernetes initiative will support a shared NFS as well but I think that a 128GB
 micro SD would be a prime choice for an NFS mount to store backups.
 
-Mar 18, 2021
-~~~~~~~~~~~~
+=== Mar 18, 2021
 
 image:images/kube-tower.jpg["Kube-Tower"]
 
@@ -113,8 +108,7 @@ command. (TODO)
 - I picked or just copied a CIDR choice and I have no clue how this is used or why it was chosen. (TODO)
 - After initialization, it seemed as though kube-master was running as a control-plane node however, `kubectl get nodes` showed status as Not Ready. I fixed this by creating a kube-flannel.yaml manifest but I never thought that just copying off the Github site would have worked. It did! And, now `kubectl get nodes' shows status Ready.
 
-Mar 19, 2021
-~~~~~~~~~~~~
+=== Mar 19, 2021
 
 image:images/frankie.jpg["Frankie"]
 
@@ -122,13 +116,11 @@ Last night, I added a NAS or Network Attached Storage to the tower which I've ap
 
 The NFS went well for kube-master and workers 1 and 2. Hosting and client operations all were successful however, new workers 3 and 4 won't auto-mount. Something is NOT calling the `/etc/fstab` file so the mount is not created at /mnt/ext.
 
-Apr 2021
---------
+== Apr 2021
 Text
 
 [appendix]
-License
--------
+== License
 This document is licensed by the Apache License version 2.0. Currently,
 the content in this document is being kept from the public however, in
 the event the material contained here is willingly shared with
