@@ -165,7 +165,7 @@ $ ps -ef | grep vault
 ----
 You should see something like this:
 
-image:images/vault-process.PNG["vault-process",height=32]
+image:vault-process.PNG["vault-process",height=32]
 
 We'll leave the `kill -9` business to you sys-Admin types and for later.
 
@@ -185,7 +185,7 @@ command has options, but for now we're do things the easy way. Again, do
 remember that this documentation is ALWAYS subject to change.
 
 When vault is initialized you should see output similar to this:
-image:images/vault-init.PNG["vault-init",height=100]
+image:vault-init.PNG["vault-init",height=100]
 
 [WARNING]
 You must capture the unseal keys and the root initial token. If you lose
