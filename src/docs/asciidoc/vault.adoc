@@ -216,31 +216,32 @@ initialization. We generally do this:
 $ vault operator init > keeper
 ----
 
+== Backup and Restore
+Text
+
+=== Scripted
+Text
+
+=== Security
+Text
+
+=== Scheduled and Automated
+Text
+
 == Administration
 The full administration and use of Vault is yet to be discovered. For now
 we'll provide some cheatsheet commands and a few use cases.
 
-=== Common Commands
+=== Command-line
 Later ... you are welcome lol ...
 
-[source,bash]
-----
-$ vault status
-----
-
-==== Administrative
-Later ...
-
-==== Use-Case
-Later ...
-
-=== Scripted Process Control
-Later ...
-
-=== Snapshot Backup
+=== Web Administration
 Later ...
 
 :numbered!:
+[appendix]
+== Cheatsheet
+Text
 
 [appendix]
 == Acronyms
