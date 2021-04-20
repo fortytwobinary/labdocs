@@ -42,6 +42,23 @@ documentation, and reference.
 
 The fortytwobinary.lab network is strictly for experimentation and education.
 
+== Apr 2021
+I've decided to add entries for each month over the previous month however, specific entries for
+the month will be in reverse (newest first) order.
+
+=== Apr 20, 2021
+I've recently moved the Wiki.js database under K8s management. And, I've also hosted an instance of
+Wordpress and it's database on K8s too. I wrote backups for the `tools` repo but while the shell scripts
+run from kube-master manually, they only simulate success in Jenkins jobs. The backup jobs in Jenkins use SSH
+kube-master (192.168.1.12) but the complex context switching is logging errors as if the script does run
+as ubuntu on the right machine but files needed in the script are not available on that host. The backup
+process begins with a simple `mysqldump` however the entire process is quite complex due to the single
+database pod. In a true production situation, the database would be hosted differently and I would have an
+entirely new set of problems.
+
+Please note that both Wordpress and Wiki.js backups are failing even though Jenkins is reporting success and
+also sending this success to Slack.
+
 == Mar 2021
 I'll start my journal here with a picture of the devices currently on the
 FortyTwoBinary home (internal) network. Here's a snip from the router admin
@@ -117,8 +134,6 @@ Last night, I added a NAS or Network Attached Storage to the tower which I've ap
 
 The NFS went well for kube-master and workers 1 and 2. Hosting and client operations all were successful however, new workers 3 and 4 won't auto-mount. Something is NOT calling the `/etc/fstab` file so the mount is not created at /mnt/ext.
 
-== Apr 2021
-Text
 
 [appendix]
 == License
