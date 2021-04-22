@@ -68,14 +68,14 @@ FortyTwoBinary home (internal) network. Here's a snip from the router admin
 showing the wired and wireless devices currently enabled. I'll dive into more
 detail below.
 
-image:images/mar-13-2021-attached.PNG["Network attached"]
+image:mar-13-2021-attached.PNG["Network attached"]
 
 The two wired machines prefixed with `kube-` are the two machines at the bottom
 of my Raspberry Pi tower. These two machines are Pi 3 Model Bs. They are currently
 running Raspbian-lite (buster 10) on 16GB micro SD cards. The machines above them
 are newer Pi 4 Model B devices.
 
-image:images/tower.jpg["Tower"]
+image:tower.jpg["Tower"]
 
 Yes, it's a mess but, it's a start. Currently, the middle, 192.168.1.7
 or third from the bottom is the first 4B I've purchased. It's currently hosting
