@@ -62,6 +62,9 @@ also sending this success to Slack.
 === Apr 21, 2021
 I realized tonight that only one of the backups on Jenkins was actually broken. The wordpress shell script needed the entire path to the two files that were being copied to the Kubernetes pod. Both wordpress and wikijs backups did need the tty option removed from the `kubectl exec` commands. These things were fixed and the scripts pushed to Github. Also, the backups were set to run at 8:35 and 8:40PM (0:35 and 0:40 UTC).
 
+=== Apr 22, 2021
+I built an arm64 docker image of Nexus3 and was successful deploying it to my Kubernetes. I was able to visit https://nexus.fortytwobinary.com and login as admin. I was not however, able to docker login to the docker registry private on port 5000 using internal IP or external DNS. I plan to revise the service and ingress. I'll try the docker login again sometime tonight.
+
 == Mar 2021
 I'll start my journal here with a picture of the devices currently on the
 FortyTwoBinary home (internal) network. Here's a snip from the router admin
