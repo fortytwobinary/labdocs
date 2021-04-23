@@ -65,6 +65,16 @@ I realized tonight that only one of the backups on Jenkins was actually broken. 
 === Apr 22, 2021
 I built an arm64 docker image of Nexus3 and was successful deploying it to my Kubernetes. I was able to visit https://nexus.fortytwobinary.com and login as admin. I was not however, able to docker login to the docker registry private on port 5000 using internal IP or external DNS. I plan to revise the service and ingress. I'll try the docker login again sometime tonight.
 
+=== Apr 23, 2021
+Last night I fixed Nexus3 to serve two endpoints, https://nexus.fortytwobinary.com and https://docker.fortytwobinary.com. The nexus endpoint provides access using basic authentication into a web portal of Nexus3 overall. The docker endpoint provides access into a Docker registry, ssl-terminated, but ultimately HTTP into a docker service on a container's port 5000 (docker-only). I was able to create a Docker registry in Nexus and also login to the new Docker registry via command-line. I pushed two images, one for Jenkins (arm64) and one for Nexus3 (arm64). This was a huge success.
+
+The issues that remain for me are:
+
+1. /mnt/ext/nexus3 remains file permissions 777
+2. Could not host service using YAML. This was accomplished with `kubectl expose`.
+
+
+
 == Mar 2021
 I'll start my journal here with a picture of the devices currently on the
 FortyTwoBinary home (internal) network. Here's a snip from the router admin
