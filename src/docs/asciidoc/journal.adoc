@@ -79,6 +79,9 @@ up my repositories. This morning I just renamed the site Jenkins build to
 labddocs-deploy and added an Embedded Build plugin so that any Jenkins
 git build status can be added to READMEs.
 
+Today, I am installing Prometheus on my cluster
+and lens on my macbook pro. Lens is available here https://k8slens.dev/ and I'll discuss the Prometheus install a little later.
+
 == Mar 2021
 I'll start my journal here with a picture of the devices currently on the
 FortyTwoBinary home (internal) network. Here's a snip from the router admin
