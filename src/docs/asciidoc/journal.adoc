@@ -82,6 +82,16 @@ git build status can be added to READMEs.
 Today, I am installing Prometheus on my cluster
 and lens on my macbook pro. Lens is available here https://k8slens.dev/ and I'll discuss the Prometheus install a little later.
 
+The prometheus install was done from manifests from someone's Git repo.
+I cloned the repo and then created a new folder under my k8s-configs repo
+and copied their files. I did absolutely no tweaking of the manifests. I
+applied the deployment and the service verbatim. I did however, notice
+that my persistent volumes did not show up just after deployment. But
+later I saw that they were there.
+
+The Lens tool is very nice because it organizes all the K8s objects into
+one UI and the pods have pop-up menu selections for shells and logs.
+
 == Mar 2021
 I'll start my journal here with a picture of the devices currently on the
 FortyTwoBinary home (internal) network. Here's a snip from the router admin
