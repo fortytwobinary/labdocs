@@ -73,7 +73,7 @@ The issues that remain for me are:
 1. /mnt/ext/nexus3 remains file permissions 777
 2. Could not host service using YAML. This was accomplished with `kubectl expose`.
 
-== Apr 24, 2021
+=== Apr 24, 2021
 Last night I worked on shell scripts and command-line tools. I cleaned
 up my repositories. This morning I just renamed the site Jenkins build to
 labddocs-deploy and added an Embedded Build plugin so that any Jenkins
