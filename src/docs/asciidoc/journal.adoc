@@ -62,20 +62,53 @@ entirely new set of problems.
 Please note that both Wordpress and Wiki.js backups are failing even though Jenkins is reporting success and
 also sending this success to Slack.
 
+=== Apr 21, 2021
+I realized tonight that only one of the backups on Jenkins was actually broken. The wordpress shell script needed the entire path to the two files that were being copied to the Kubernetes pod. Both wordpress and wikijs backups did need the tty option removed from the `kubectl exec` commands. These things were fixed and the scripts pushed to Github. Also, the backups were set to run at 8:35 and 8:40PM (0:35 and 0:40 UTC).
+
+=== Apr 22, 2021
+I built an arm64 docker image of Nexus3 and was successful deploying it to my Kubernetes. I was able to visit https://nexus.fortytwobinary.com and login as admin. I was not however, able to docker login to the docker registry private on port 5000 using internal IP or external DNS. I plan to revise the service and ingress. I'll try the docker login again sometime tonight.
+
+=== Apr 23, 2021
+Last night I fixed Nexus3 to serve two endpoints, https://nexus.fortytwobinary.com and https://docker.fortytwobinary.com. The nexus endpoint provides access using basic authentication into a web portal of Nexus3 overall. The docker endpoint provides access into a Docker registry, ssl-terminated, but ultimately HTTP into a docker service on a container's port 5000 (docker-only). I was able to create a Docker registry in Nexus and also login to the new Docker registry via command-line. I pushed two images, one for Jenkins (arm64) and one for Nexus3 (arm64). This was a huge success.
+
+The issues that remain for me are:
+
+1. /mnt/ext/nexus3 remains file permissions 777
+2. Could not host service using YAML. This was accomplished with `kubectl expose`.
+
+=== Apr 24, 2021
+Last night I worked on shell scripts and command-line tools. I cleaned
+up my repositories. This morning I just renamed the site Jenkins build to
+labddocs-deploy and added an Embedded Build plugin so that any Jenkins
+git build status can be added to READMEs.
+
+Today, I am installing Prometheus on my cluster
+and lens on my macbook pro. Lens is available here https://k8slens.dev/ and I'll discuss the Prometheus install a little later.
+
+The prometheus install was done from manifests from someone's Git repo.
+I cloned the repo and then created a new folder under my k8s-configs repo
+and copied their files. I did absolutely no tweaking of the manifests. I
+applied the deployment and the service verbatim. I did however, notice
+that my persistent volumes did not show up just after deployment. But
+later I saw that they were there.
+
+The Lens tool is very nice because it organizes all the K8s objects into
+one UI and the pods have pop-up menu selections for shells and logs.
+
 == Mar 2021
 I'll start my journal here with a picture of the devices currently on the
 FortyTwoBinary home (internal) network. Here's a snip from the router admin
 showing the wired and wireless devices currently enabled. I'll dive into more
 detail below.
 
-image:images/mar-13-2021-attached.PNG["Network attached"]
+image:mar-13-2021-attached.PNG["Network attached"]
 
 The two wired machines prefixed with `kube-` are the two machines at the bottom
 of my Raspberry Pi tower. These two machines are Pi 3 Model Bs. They are currently
 running Raspbian-lite (buster 10) on 16GB micro SD cards. The machines above them
 are newer Pi 4 Model B devices.
 
-image:images/tower.jpg["Tower"]
+image:tower.jpg["Tower"]
 
 Yes, it's a mess but, it's a start. Currently, the middle, 192.168.1.7
 or third from the bottom is the first 4B I've purchased. It's currently hosting
