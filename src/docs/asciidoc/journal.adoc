@@ -8,12 +8,13 @@ FortyTwoBinary Team
 :numbered:
 :source-highlighter: coderay
 :stylesheet: italian-pop.css
-:website: https://fortytwobinary.com/
+:website: https://site.fortytwobinary.com/
+:lab: https://apache.fortytwobinary.com/lab/
 :author: David L. Whitehurst
 
 {{website}[Site Homepage]
 
-{endpoint-url}/welcome.html[Lab Homepage]
+{lab}/welcome.html[Lab Homepage]
 
 image:vy.png["Company Logo",height=32]
 

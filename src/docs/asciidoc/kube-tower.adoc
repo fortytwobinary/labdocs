@@ -8,14 +8,15 @@ FortyTwoBinary Team
 :numbered:
 :source-highlighter: pygments
 :stylesheet: italian-pop.css
-:website: https://control-1.fortytwobinary.lab/
+:website: https://site.fortytwobinary.lab/
+:lab: https://apache.fortytwobinary.com/lab/
 :author: David L. Whitehurst
 :pi3: Raspberry Pi 3 Model B
 :pi4: Raspberry Pi 4 Model B
 
 {website}[Site Homepage]
 
-{endpoint-url}/welcome.html[Lab Homepage]
+{lab}/welcome.html[Lab Homepage]
 
 image:vy.png["Company Logo"]
 
