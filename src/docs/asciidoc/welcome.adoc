@@ -60,5 +60,6 @@ here because the documents are not organized and it's more convenient to just li
 - {endpoint-url}/nfs.html[nfs]
 - {endpoint-url}/vault.html[vault]
 - {endpoint-url}/journal.html[journal]
+- {endpoint-url}/issues.html[issues]
 - {endpoint-url}/asciidoc.html[asciidoc]
 
