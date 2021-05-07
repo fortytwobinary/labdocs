@@ -8,7 +8,7 @@ FortyTwoBinary Team
 :numbered:
 :source-highlighter: pygments
 :stylesheet: italian-pop.css
-:website: https://site.fortytwobinary.lab/
+:website: https://site.fortytwobinary.com/
 :lab: https://apache.fortytwobinary.com/lab/
 :author: David L. Whitehurst
 :pi3: Raspberry Pi 3 Model B
