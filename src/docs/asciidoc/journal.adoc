@@ -43,10 +43,18 @@ documentation, and reference.
 
 The fortytwobinary.lab network is strictly for experimentation and education.
 
-== May 2021
-This is a test again
+== June 2021
+Coming soon
 
-= Apr 2021
+== May 2021
+May has been slow with Kubernetes because work has been stressful this month. The Raspberry Pi tower Kubernetes cluster has been 100% reliable and all backup and automation has been green. I did however, purchase a Dell PowerEdge R720 server for my Kubernetes learning.
+
+=== May 30 2021
+Yesterday I created a Gitlab instance on the new server, I've aptly named _Beast_. This is HTTP only and available for internal work on the network lab. Today, I've created 5 virtual machines with reserved ip for a new Kubernetes cluster. This will be a stronger, more robust cluster. I would like to automate the standup of this cluster from machines to a hosting platform for a CKAD developer. I'm currently working to be CKAD certified. This will help with my learning.
+
+The new machines, physical and virtual were updated in the {lab}/playbook.html[Playbook]
+
+== Apr 2021
 I've decided to add entries for each month over the previous month however, specific entries for
 the month will be in reverse (newest first) order.
 
