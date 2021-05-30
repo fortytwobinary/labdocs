@@ -82,48 +82,51 @@ and that allow access are noted.
 |Name |Description
 
 |Macbook Pro
-|My third macbook pro is a 2016, 15-Inch 2.7 GHz Quad-Core Intel Core
+|*192.168.1.4* - My third macbook pro is a 2016, 15-Inch 2.7 GHz Quad-Core Intel Core
 i7 with 16GB of 2133MHz LPDDR3 RAM and a 500GB SSD. Serial Number
 CO2T336TH03Q, OS current version 11.2.1 macOS Big Sur
 
 |Intel NUC
-|This machine has replaced my macbook pro as my day-to-day workstation. Its hostname is `quiet-nuc`.
+|*192.168.1.13* - This machine has replaced my macbook pro as my day-to-day workstation. Its hostname is `quiet-nuc`.
 
 |T1-1 kube-worker-3
-|Labist Raspberry Pi 4 Kit model B (192.168.1.19) 8GB RAM Ubuntu 20.04 LTS
+|*192.168.1.19* - Labist Raspberry Pi 4 Kit model B (192.168.1.19) 8GB RAM Ubuntu 20.04 LTS
 on a 32GB microSD card.
 
 |T1-2 kube-master (control-plane)
-|Labist Raspberry Pi 4 Kit model B (192.168.1.12) 8GB RAM Ubuntu 20.04 LTS
+|*192.168.1.12* - Labist Raspberry Pi 4 Kit model B (192.168.1.12) 8GB RAM Ubuntu 20.04 LTS
 on a 32GB microSD card.
 
 |T1-3 kube-worker-4
-|Labist Raspberry Pi 4 Kit model B (192.168.1.14) 8GBRAM Ubuntu 20.04 LTS
+|*192.168.1.14* - Labist Raspberry Pi 4 Kit model B (192.168.1.14) 8GBRAM Ubuntu 20.04 LTS
 on a 32GB microSD card.
 
 |T1-4 kube-worker-2
-|Raspberry Pi 3 Model B (192.168.1.17) 1GB RAM Ubuntu 20.04 LTS
+|*192.168.1.17* - Raspberry Pi 3 Model B (192.168.1.17) 1GB RAM Ubuntu 20.04 LTS
 on a 32GB microSD card.
 
 |T1-5 kube-worker-1
-|Raspberry Pi 3 Model B (192.168.1.18) 1GB RAM Ubuntu 20.04 LTS
+|*192.168.1.18* - Raspberry Pi 3 Model B (192.168.1.18) 1GB RAM Ubuntu 20.04 LTS
 on a 32GB microSD card.
 
 |T2-1 ns1
-|Octa-core S912 arm64 (192.168.1.20) XGB RAM Armbian
+|*192.168.1.20* - Octa-core S912 arm64 (192.168.1.20) XGB RAM Armbian
 on a XGB microSD card.
 
 |T2-2 ns2
-|Octa-core S912 arm64 (192.168.1.22) XGB RAM Armbian
+|*192.168.1.22* - Octa-core S912 arm64 (192.168.1.22) XGB RAM Armbian
 on a XGB microSD card.
 
 |T2-3 control-1
-|Octa-core S912 arm64 (192.168.1.21) XGB RAM Armbian
+|*offline* - Octa-core S912 arm64 (192.168.1.21) XGB RAM Armbian
 on a XGB microSD card.
 
 | vault
-|Octa-core S912 arm64 (192.168.1.??) XGB RAM Armbian
+|*192.168.1.24* - Octa-core S912 arm64 (192.168.1.??) XGB RAM Armbian
 on a XGB microSD card. This machine hosts Hashicorp Vault
+
+| PowerEdge-R720 aka Beast
+|*192.168.1.27* - Later
 |====================================================================
 
 [[X11]]
@@ -132,7 +135,27 @@ This section describes the virtual machines that participate in the FortyTwoBina
 experiments. These virtual machines perform some service or function in
 the overall scheme of getting work done.
 
-- None at this time
+[cols="1e,5",frame="topbot",options="header"]
+.Virtual machines list
+|====================================================================
+|Name |Description
+
+|beast-master
+|*192.168.1.29* - Hosted by Beast, Ubuntu 20.04 LTS
+
+|beast-worker-1
+|*192.168.1.30* - Hosted by Beast, Ubuntu 20.04 LTS
+
+|beast-worker-2
+|*192.168.1.31* - Hosted by Beast, Ubuntu 20.04 LTS
+
+|beast-worker-3
+|*192.168.1.32*- Hosted by Beast, Ubuntu 20.04 LTS
+
+|beast-worker-4
+|*192.168.1.33* - Hosted by Beast, Ubuntu 20.04 LTS
+
+|====================================================================
 
 == Network and Components
 There are various components public and private at play on the network that
