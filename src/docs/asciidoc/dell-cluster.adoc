@@ -1,4 +1,4 @@
-= Kubernetes Tower
+= Dell Cluster
 David L Whitehurst
 :description: installation reference
 :toc: left
@@ -17,8 +17,7 @@ David L Whitehurst
 
 image:vy.png["Company Logo"]
 
-Welcome to the service documentation for my Kubernetes Tower, "Frankie" or
-or short for Frankenstein. The tower consists of two {pi3} machines and 3 {pi4} machines atop
+Welcome to the service documentation for my Dell Cluster "Beast". The cluster consists of two {pi3} machines and 3 {pi4} machines atop
 a G-Technology 500GB <<X1002,NAS>>. This document is subject to great change and will be maintained in a software repository https://github.com/dlwhitehurst/labdocs[here].
 
 [WARNING]

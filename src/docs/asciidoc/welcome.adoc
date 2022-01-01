@@ -1,5 +1,5 @@
 = Welcome
-FortyTwoBinary Team
+David L Whitehurst
 :description: Welcome Page
 :toc: left
 :icons: font
@@ -7,7 +7,7 @@ FortyTwoBinary Team
 :stylesheet: italian-pop.css
 :docinfo: shared
 :numbered:
-:website: https://site.fortytwobinary.com/
+:website: https://apache.tavros.dlwhitehurst.com/
 :author: David L. Whitehurst
 
 image:ethernet.jpg["Ethernet"]
@@ -16,8 +16,8 @@ image:ethernet.jpg["Ethernet"]
 
 image:vy.png["Company Logo",height=32]
 
-Welcome to the FortyTwoBinary lab documentation. These documents are subject
-to great change and will be maintained in a software repository https://github.com/fortytwobinary/labdocs[here].
+Welcome to David L. Whitehurst's Tavros lab documentation. These documents are subject
+to great change and will be maintained in a software repository https://github.com/dlwhitehurst/labdocs[here].
 
 [WARNING]
 This {description} was drafted and is maintained as a DevOps reference to the work that occurs on the FortyTwoBinary network and infrastructure. The powerful command-line instructions found here, may or may
@@ -54,12 +54,14 @@ few services publicly and all communications are protected with PKI certificates
 The following hyperlinks provide navigation to the lab documentation content. Links are given
 here because the documents are not organized and it's more convenient to just list them here.
 
-- {endpoint-url}/kube-tower.html[kube-tower]
-- {endpoint-url}/playbook.html[playbook]
-- {endpoint-url}/docker.html[docker]
-- {endpoint-url}/nfs.html[nfs]
-- {endpoint-url}/vault.html[vault]
-- {endpoint-url}/journal.html[journal]
-- {endpoint-url}/issues.html[issues]
+- {endpoint-url}/kube-tower.html[Raspberry Pi Tower]
+- {endpoint-url}/dell-cluster.html[Dell Cluster]
+- {endpoint-url}/my-tavros.html[Davros or David's Tavros]
+- {endpoint-url}/playbook.html[Playbook]
+- {endpoint-url}/docker.html[Docker]
+- {endpoint-url}/nfs.html[NFS]
+- {endpoint-url}/vault.html[Vault]
+- {endpoint-url}/journal.html[Journal]
+- {endpoint-url}/issues.html[Issues]
 - {endpoint-url}/asciidoc.html[asciidoc]
 
